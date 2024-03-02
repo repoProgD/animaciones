@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/Conjuntos/1586276804_4276113639_1982622216.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/Conjuntos/2876427954_3997944743_1459523846.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/Conjuntos/2876427954_515349076_1200873849.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/Conjuntos/2876427954_1064993117_4213614519.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/Conjuntos/2876427954_1704852926_1772519986.mp4'

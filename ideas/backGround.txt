@@ -1,0 +1,8 @@
+#cambiar background fuera de la clase
+config.background_color = "#24043d"
+
+
+# cambiar el background dentro de la clase
+self.camera.back_ground_color = WHITE
+
+self.camera.background_color = "#24043d"

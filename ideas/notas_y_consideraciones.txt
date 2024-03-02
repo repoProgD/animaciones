@@ -1,0 +1,3 @@
+Avisar que en el curso/guia/libro se siguen distintas convenciones
+Por ejemplo, las multiplicaciones las escribiremos utilizando el símbolo asterisco("*") siguiendo las convenciones
+de Python y no utilizando un punto o una "x" como se hace en matemática.

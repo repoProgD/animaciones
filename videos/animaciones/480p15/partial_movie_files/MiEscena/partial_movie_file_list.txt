@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/MiEscena/1586276804_2543069735_1459202279.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/MiEscena/2876427954_2592237524_1847582535.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/MiEscena/2876427954_299078137_1520772160.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/MiEscena/2876427954_701744239_1577538107.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/MiEscena/2876427954_4012061404_2281807772.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/MiEscena/2876427954_3831463180_1708175382.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/MiEscena/2876427954_1857535616_2414214239.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/MiEscena/2876427954_3732145385_3487578413.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/MiEscena/2876427954_1704852926_3986551982.mp4'
