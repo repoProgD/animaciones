@@ -1,0 +1,2 @@
+Para Diapo: Qué es un tipo de dato inmutable, qué es un tipo de dato mutable. Ejemplos.
+concatenar

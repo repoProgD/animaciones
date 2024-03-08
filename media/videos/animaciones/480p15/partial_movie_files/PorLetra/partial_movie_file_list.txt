@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/PorLetra/3343204941_2459875408_223132457.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/PorLetra/3686312481_1141282389_3838685267.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/PorLetra/3686312481_1141282389_259507352.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/PorLetra/3686312481_4178118270_402690285.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/PorLetra/3686312481_1141282389_188936800.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/PorLetra/3686312481_3545401208_2909815302.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/PorLetra/3686312481_4069025086_3469276351.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/PorLetra/3686312481_3890345977_4005571490.mp4'
