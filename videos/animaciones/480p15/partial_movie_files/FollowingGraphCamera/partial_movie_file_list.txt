@@ -1,4 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/FollowingGraphCamera/553919123_1073004596_3145228076.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/FollowingGraphCamera/2083733368_3422465468_3129556555.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/videos/animaciones/480p15/partial_movie_files/FollowingGraphCamera/1449271797_2144201532_289039829.mp4'
