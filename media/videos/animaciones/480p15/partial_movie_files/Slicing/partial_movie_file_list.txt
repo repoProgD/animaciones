@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/Slicing/1185818338_3110727029_3417070953.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/Slicing/624642324_1755564794_2988498179.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/Slicing/624642324_2075499643_4059816594.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/Slicing/624642324_1491032088_1114585134.mp4'
+file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/Slicing/624642324_2508371069_3746557485.mp4'

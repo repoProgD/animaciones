@@ -1,6 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/RAP/3343204941_2851253531_223132457.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/RAP/3686312481_1704852926_1584633112.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/RAP/3686312481_3732614797_902193683.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/RAP/3686312481_1704852926_4194568776.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/RAP/3686312481_1704852926_3464137253.mp4'
