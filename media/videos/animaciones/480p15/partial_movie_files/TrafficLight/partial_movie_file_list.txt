@@ -1,7 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/TrafficLight/3343204941_2312837105_4015528953.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/TrafficLight/3686312481_3890345977_2488851700.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/TrafficLight/3686312481_1722191475_4010347958.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/TrafficLight/3686312481_3890345977_1841702066.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/TrafficLight/3686312481_4000488866_2920968687.mp4'
-file 'file:C:/Users/Diego/Desktop/animaciones/media/videos/animaciones/480p15/partial_movie_files/TrafficLight/3686312481_3890345977_3584971567.mp4'

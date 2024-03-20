@@ -1,0 +1,6 @@
+Cuando cambie un audio con audacity:
+Frecuencia 48000 Hz
+Modo de velocidad:
+Constante
+Calidad:
+48kbps
