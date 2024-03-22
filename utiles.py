@@ -1,13 +1,7 @@
 from manim import *
 """Clase con funciones auxiliares para las escenas"""
 
-class Herramientas(Scene):
-    def crear_logo(self):
-        logo = ImageMobject("images\\logorobo.png").scale(0.65)
-        logo.move_to(DOWN * 2.80 + LEFT * 5.9).set_opacity(0.55)
-        scene.add(logo)
-            
-    
+
 class Sort(Scene):
     def construct(self):
         c11 = Circle(color=WHITE).shift(UP * 1.5 + LEFT * 2)
