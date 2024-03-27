@@ -32,4 +32,5 @@ def construir_cuadro(self):
     codo5 = h.crear_codo(tuplas.get_top(), punto2.get_center())
     self.add(tipos, numeros, flotantes, enteros, booleanos, secuenciales, set, diccionario, codo1, codo2,
     linea1, linea2, linea3, linea4, linea5, linea6, cadena, listas, tuplas, codo4, codo5)
+
     
