@@ -9,7 +9,7 @@
 ## Pasos para crear un audio de calidad
 
 1. Crear mi audio en Audacity
-2. Utilizar https://podcast.adobe.com/enhance# para mejorar la calidad del audio
+2. Utilizar [Enhacer de Adobe](https://podcast.adobe.com/enhance#) para mejorar la calidad del audio
 3. Descargar el archivo .wav creado en el punto anterior
 4. Convertir este archivo en .mp3 para reducir su tamaño
-4b. Abrir el archivo con Audacity y Archivo -> Exportar como .mp3
+- Abrir el archivo con Audacity y Archivo -> Exportar como .mp3

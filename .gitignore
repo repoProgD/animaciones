@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Manim (output y temporales)
+media/
+notebooks/media/
+*.log
+*.temp
+*.mp4
+*.mov
+*.gif
+*.png
+*.svg
+
+# Entornos virtuales (por si acaso)
+env/
+venv/
+
+# Configs locales y del sistema
+.vscode/
+*.DS_Store
+*.swp
+*.env
