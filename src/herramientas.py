@@ -8,6 +8,16 @@ class Logo(VMobject):
         logo.move_to(DOWN * 2.8 + LEFT * 5.9).set_opacity(0.55)
         self.add(logo)
 
+class LogoV(VMobject):
+    def __init__(self, **kwargs):
+        # inicializar el VMobject
+        super().__init__(**kwargs)
+        logo = ImageMobject("..\\images\\logorobo.png").scale(0.825)
+        logo.move_to([-2.94,-6.5,0]).set_opacity(0.55)
+        self.add(logo)
+
+    
+
 class CrearSecuencia(VMobject):  
     def __init__(self, figura, tamanio, cantidad, inicio, hacia, objetos_adicionales=None, espaciado=0.1, **kwargs):
         """ 
@@ -103,6 +113,29 @@ class Reglas(VMobject):
         linea_v = Line(punto1, punto2)
         linea_h = Line(punto3, punto4)
         self.add(linea_v, linea_h)
+
+
+class GrillaVertical(VGroup):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        
+        # Crear una rejilla 9:16 (orientación vertical)
+        grid = NumberPlane(
+            x_range=[-4.5, 4.5, 1],    # Ancho: 9 unidades
+            y_range=[-8, 8, 1],        # Alto: 16 unidades
+            x_length=9,
+            y_length=16,
+            axis_config={"color": BLUE},
+            background_line_style={
+                "stroke_color": WHITE,
+                "stroke_width": 1,
+                "stroke_opacity": 1
+            }
+        )
+
+        self.add(grid)
+
+
 
 
 ####################################  ##################################

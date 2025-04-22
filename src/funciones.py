@@ -133,8 +133,13 @@ def escenificar_lista(texto_original, corchete_color=WHITE, digitos_color=BLUE, 
     return VGroup(corchete1_objeto, digitos_objeto, comas_objeto, corchete2_objeto, puntos)
 
     
-## Funciones libres del módulo
+## Funciones libres del módulo # Creo que esta función está haciendo dos cosas
 def crear_codigo(un_texto, movimiento):
+    codigo = Code(code = un_texto, tab_width = 2.25, background = "window",language = "Python", font="Monospace").scale(0.8)
+    codigo.move_to(movimiento)
+    return codigo
+
+def crear_terminal(un_texto):
     codigo = Code(code = un_texto, tab_width = 2.25, background = "window",language = "Python", font="Monospace").scale(0.8)
     codigo.move_to(movimiento)
     return codigo
