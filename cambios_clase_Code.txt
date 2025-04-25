@@ -1,0 +1,12 @@
+ def crear_snippet(codigo):
+            """Crea una ventana de código y lo muestra palabra por palabra"""
+            self.play(Create(codigo[0]))
+            for i in range(len(codigo[2])):
+                chars_por_seg = len(codigo[2][i])/4
+                self.play(FadeIn(codigo[1][i]))
+                self.play(AddTextLetterByLetter(codigo[2][i], time_per_char=0.17))
+            self.wait(1)
+
+def crear_codigo(un_texto):
+            codigo = Code(code_string=un_texto, tab_width=10,background="window", language="Python", paragraph_config={"font": "Monospace", "font_size":40})
+            return codigo
