@@ -8,15 +8,14 @@ class Logo(VMobject):
         logo.move_to(DOWN * 2.8 + LEFT * 5.9).set_opacity(0.55)
         self.add(logo)
 
-class LogoV(VMobject):
+class LogoV(Group):  # Group permite ImageMobject y otros tipos mixtos
     def __init__(self, **kwargs):
-        # inicializar el VMobject
         super().__init__(**kwargs)
-        logo = ImageMobject("..\\images\\logorobo.png").scale(0.825)
-        logo.move_to([-2.94,-6.5,0]).set_opacity(0.55)
-        self.add(logo)
+        logo = ImageMobject("../images/logorobo.png").scale(0.55)
+        logo.move_to([-2.94, -6.15, 0]).set_opacity(0.55)
+        self.add(logo)  # Ahora sí funciona
 
-    
+ 
 
 class CrearSecuencia(VMobject):  
     def __init__(self, figura, tamanio, cantidad, inicio, hacia, objetos_adicionales=None, espaciado=0.1, **kwargs):
@@ -134,6 +133,11 @@ class GrillaVertical(VGroup):
         )
 
         self.add(grid)
+
+def toggle_grilla(escena, mostrar=True):
+    if mostrar:
+        grilla = GrillaVertical()
+        escena.add(grilla)
 
 
 

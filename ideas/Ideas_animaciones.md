@@ -1,1 +1,0 @@
-#### Plantear el sistema de archivos de un SO como un arbol, para recorrerlo me posiciono dentro del arbol

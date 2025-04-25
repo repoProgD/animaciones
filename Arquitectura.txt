@@ -1,0 +1,21 @@
+arbol_proyecto/
+├── escenas/
+│   ├── verticales/
+│   │   ├── desplegar_cuadrados.py
+│   │   ├── metodos_cadenas.py
+│   │   └── ...
+│   ├── horizontales/
+│   │   ├── titulo_animado.py
+│   │   └── ...
+│   └── __init__.py
+├── recursos/
+│   ├── fuentes/
+│   ├── svg/
+│   └── ...
+├── helpers/
+│   ├── animaciones.py
+│   ├── utilidades.py
+│   └── __init__.py
+├── config/
+│   └── manim.cfg
+└── README.md

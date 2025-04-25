@@ -3,16 +3,6 @@ import herramientas as h
 import funciones as f
 from config_vertical import FRAME_HEIGHT, FRAME_WIDTH
 
-# # Swap para el intercambio de pixeles (cambio de resolución, disponemos los píxeles en formato vertical)
-# altura_default = config.pixel_height
-# config.pixel_height = config.pixel_width
-# config.pixel_width = altura_default
-
-# # Cambio del frame para ajustarse al cambio de resolución
-# config.frame_width = config.frame_height * (9/16)
-# FRAME_HEIGHT = config.frame_height
-# FRAME_WIDTH = config.frame_width
-
 config.media_width = "75%"
 config.verbosity = "WARNING"
 config.background_color = "#24043d"
@@ -38,11 +28,6 @@ class Ejemplo(Scene):
             for letra, cuadrado in zip(un_texto, contenedores):
                 letra.move_to(cuadrado.get_bottom(), aligned_edge=DOWN)
             un_texto.shift(0.2 * UP)
-
-        # Obtener el tamaño de la pantalla
-        ancho = self.camera.frame_width
-        alto = self.camera.frame_height
-
 
         # Obtener el tamaño de la pantalla
         ancho = self.camera.frame_width
