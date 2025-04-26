@@ -1,11 +1,133 @@
 from manim import *
+from pathlib import Path
 
-class Logo(VMobject):
+# Ruta base de imágenes
+IMAGES_PATH = Path(__file__).resolve().parent.parent / "images"
+
+# Caché interno de imágenes ya cargadas
+_imagen_cache = {}
+
+#### funciones
+
+def cargar_imagen(nombre_archivo, **kwargs):
+    """
+    Carga una imagen desde la carpeta 'images' y la devuelve como ImageMobject.
+    Usa cache para no cargar varias veces la misma imagen.
+
+    Parámetros:
+    - nombre_archivo: str, nombre del archivo (ej. 'logorobo.png')
+    - kwargs: parámetros opcionales que quieras pasar a ImageMobject.
+
+    Retorna:
+    - Un ImageMobject listo para usar (nueva instancia cada vez para que puedas moverlas independientes).
+    """
+    ruta_imagen = IMAGES_PATH / nombre_archivo
+    if not ruta_imagen.exists():
+        raise FileNotFoundError(f"No se encontró la imagen: {ruta_imagen}")
+
+    # Si ya está en el cache, usamos el archivo ya cargado
+    if nombre_archivo not in _imagen_cache:
+        _imagen_cache[nombre_archivo] = str(ruta_imagen)
+
+    # Cada vez que llamás, devolvemos un nuevo ImageMobject para que puedas manipularlo independiente
+    return ImageMobject(_imagen_cache[nombre_archivo], **kwargs)
+
+
+def cargar_imagenes_desde_carpeta(nombre_carpeta, tipo="imagen", **kwargs):
+    """
+    Carga archivos desde una subcarpeta como imágenes rasterizadas (PNG/JPG) o vectores SVG.
+
+    Parámetros:
+    - nombre_carpeta: nombre de la subcarpeta dentro de 'images'
+    - tipo: 'imagen' para PNG/JPG, 'vector' para SVG
+    - kwargs: parámetros opcionales que se pasan a ImageMobject o SVGMobject
+
+    Retorna:
+    - Group (para imágenes) o VGroup (para vectores)
+    """
+    ruta_carpeta = IMAGES_PATH / nombre_carpeta
+
+    if not ruta_carpeta.exists() or not ruta_carpeta.is_dir():
+        raise FileNotFoundError(f"No se encontró la carpeta: {ruta_carpeta}")
+
+    archivos = sorted(ruta_carpeta.glob("*"))
+
+    objetos = []
+
+    for archivo in archivos:
+        if tipo == "imagen":
+            if archivo.suffix.lower() not in [".png", ".jpg", ".jpeg"]:
+                continue  # Salteamos si no es una imagen raster
+
+            # Cacheamos la ruta
+            if archivo.name not in _imagen_cache:
+                _imagen_cache[archivo.name] = str(archivo)
+
+            obj = ImageMobject(_imagen_cache[archivo.name], **kwargs)
+            objetos.append(obj)
+
+        elif tipo == "vector":
+            if archivo.suffix.lower() != ".svg":
+                continue  # Salteamos si no es SVG
+
+            obj = SVGMobject(str(archivo), **kwargs)
+            objetos.append(obj)
+
+        else:
+            raise ValueError(f"Tipo desconocido: {tipo}. Usa 'imagen' o 'vector'.")
+
+    if tipo == "imagen":
+        return Group(*objetos)
+    elif tipo == "vector":
+        return VGroup(*objetos)
+
+    # No debería llegar acá
+    return None
+
+
+def posicionar_logo_h(self, logo):
+    """
+    Posiciona un logo en la escena con una posición específica y opacidad,
+    y lo agrega a la escena.
+
+    Parámetros:
+    - self: El contexto de la escena en Manim.
+    - logo: El ImageMobject que se desea posicionar.
+    """
+    logo.move_to(DOWN * 2.8 + LEFT * 5.9).set_opacity(0.55)
+    self.add(logo)
+
+
+
+def toggle_grilla(escena, mostrar=True):
+    if mostrar:
+        grilla = GrillaVertical()
+        escena.add(grilla)
+
+
+
+def crear_anchors(group):
+    """
+    Crea un Group de Point() ubicados en el centro de cada subobjeto del Group dado.
+
+    Parámetros:
+    - group: Group o VGroup de Manim.
+
+    Retorna:
+    - Group de Point()s ubicados en los centros de los subobjetos.
+    """
+    return Group(*[Point(mobj.get_center()) for mobj in group])
+
+
+#### Clases
+class Logo(Group):
     def __init__(self, **kwargs):
         # inicializar el VMobject
         super().__init__(**kwargs)
-        logo = ImageMobject("..\\images\\logorobo.png").scale(0.65)
-        logo.move_to(DOWN * 2.8 + LEFT * 5.9).set_opacity(0.55)
+        logo_ruta = Path(__file__).resolve().parent.parent / "images" / "logorobo.png"  # Manim siempre buscará imágenes relativas al archivo de la animación 
+                                                                                        # actual, por eso hay que pasarle un Path absoluto.
+        logo = ImageMobject(str(logo_ruta)).scale(0.65)
+        logo.move_to(DOWN * 2.8 + LEFT * 5.9).set_opacity(0.55)   
         self.add(logo)
 
 class LogoV(Group):  # Group permite ImageMobject y otros tipos mixtos
@@ -13,7 +135,7 @@ class LogoV(Group):  # Group permite ImageMobject y otros tipos mixtos
         super().__init__(**kwargs)
         logo = ImageMobject("../images/logorobo.png").scale(0.55)
         logo.move_to([-2.94, -6.15, 0]).set_opacity(0.55)
-        self.add(logo)  # Ahora sí funciona
+        self.add(logo)  
 
  
 
@@ -134,10 +256,11 @@ class GrillaVertical(VGroup):
 
         self.add(grid)
 
-def toggle_grilla(escena, mostrar=True):
-    if mostrar:
-        grilla = GrillaVertical()
-        escena.add(grilla)
+
+
+
+
+
 
 
 
