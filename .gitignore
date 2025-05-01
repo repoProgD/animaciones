@@ -9,6 +9,12 @@ __pycache__/
 # Manim (output y temporales)
 media/
 notebooks/media/
+escenas/horizontales/media
+escenas/pruebas/media
+escenas/verticales/media
+layouts/media
+src/media
+src/widgets/media
 *.log
 *.temp
 *.mp4

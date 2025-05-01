@@ -1,0 +1,1 @@
+Si la fuente se hace muy grande(60+) el texto empieza a quedar afuera del panel.
