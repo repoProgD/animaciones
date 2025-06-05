@@ -191,3 +191,16 @@ def construir_cuadro(self):
     codo5 = crear_codo(tuplas.get_top(), punto2.get_center())
     self.add(tipos, numeros, flotantes, enteros, booleanos, secuenciales, set, diccionario, codo1, codo2,
     linea1, linea2, linea3, linea4, linea5, linea6, cadena, listas, tuplas, codo4, codo5)
+
+
+def etiquetar_ejes(ejes: ThreeDAxes, escala: float = 0.65, color: str = WHITE) -> VGroup:
+    """Devuelve un grupo con las etiquetas 'X', 'Y', 'Z' posicionadas al final de cada eje."""
+    etiqueta_x = Text("X", color=color).scale(escala)
+    etiqueta_y = Text("Y", color=color).scale(escala)
+    etiqueta_z = Text("Z", color=color).scale(escala)
+
+    etiqueta_x.move_to(ejes.x_axis.get_end() + RIGHT * 0.3)
+    etiqueta_y.move_to(ejes.y_axis.get_end() + UP * 0.3)
+    etiqueta_z.move_to(ejes.z_axis.get_end() + OUT * 0.3)  # OUT es hacia la cámara
+
+    return VGroup(etiqueta_x, etiqueta_y, etiqueta_z)
